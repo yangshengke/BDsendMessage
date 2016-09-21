@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText BDcard;
     private EditText BDtext;
     private Button send;
-    private TextView BDs;  //适当放松放松
+    private TextView BDs;  //发个我十分大方
     private static int msgId = 1;
     private LocationManager lm;
 
