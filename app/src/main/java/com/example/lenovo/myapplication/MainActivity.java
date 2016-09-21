@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText BDcard;
     private EditText BDtext;
     private Button send;
-    private TextView BDs;
+    private TextView BDs;  //勾勾撒旦
     private static int msgId = 1;
     private LocationManager lm;
 
