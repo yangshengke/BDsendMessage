@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeInSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/BDcard"
+            android:layout_toRightOf="@+id/BDcard"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/BDcard"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="请输入接收者的北斗卡号"
+            android:textAllCaps="false"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/BDtext"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeInSide"
+        android:layout_centerHorizontal="true"
+        android:enabled="true"
+        android:hint="发送内容" />
+
+    <TextView
+        android:background="@drawable/textview_border"
+        android:id="@+id/BDs"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:hint="接收内容" />
+
+</RelativeLayout>
